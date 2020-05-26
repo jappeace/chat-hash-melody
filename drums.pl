@@ -2,8 +2,8 @@ use Audio::PortMIDI;
 
 my $notation = q:to/END/;
 C |----------------|----------------|----------------|----------X-----|
-R |x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-X-x-x-|x-x-x-x-x---x-x-|
-S |----o--o-o--o--o|----o--o-o--o--o|----o--o-o----o-|-o--o--o-o----o-|
+R |x---x-x-x---x-x-|x-x---x-x-x-x-x-|x-x-x-x-x-X-x-x-|x-x-x-x-x---x-x-|
+S |o---o--ooo--o--o|----o--o-o--o--o|----o--o-o----o-|-o--o--o-o----o-|
 B |o-o-------oo----|o-o-------oo----|o-o-------o-----|--oo------o-----|
 END
 
@@ -50,7 +50,7 @@ class DrumTab::Actions {
     }
 }
 
-sub MAIN(Int :$bpm = 120, Int :$channel = 9, Int :$device = 3) {
+sub MAIN(Int :$bpm = 120, Int :$channel = 9, Int :$device = 2) {
 
     my $event-type = NoteOn;
 

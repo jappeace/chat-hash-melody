@@ -4,7 +4,7 @@ print "hello world";
 
 my $pm = Audio::PortMIDI.new;
 
-my $dev = $pm.default-output-device;
+my $dev = 2;
 
 say $dev;
 

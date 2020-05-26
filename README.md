@@ -10,10 +10,7 @@ in perl 6
 # Running
 
 ```
-nix-shell --run "zef install Audio::PortMIDI"
-make run
-
-docker run -d -v /home/jappie/projects/chat-hash-melody:/root  --device /dev/snd -it ubuntu-perl
-
+nix-shell --run "zef install Audio::PortMIDI" 
+nix-shell --run "fluidsynth" # setup midi player
+nix-shell --run "perl6 drums.pl"
 ```
-
